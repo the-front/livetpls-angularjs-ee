@@ -1,0 +1,46 @@
+<templateSet group="ng_ee_angularjs">
+  <template name="ng_module" value="module(&#10;  // module name&#10;  '$moduleName$',&#10;&#10;  // module dependencies&#10;  [&#10;    $END$&#10;  ]&#10;);" description="angular.js module" toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_constant" value="constant('$name', $value$);$END$" description="angular.js constant" toReformat="true" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_value" value="value('$name', $value$);$END$" description="angular.js value" toReformat="true" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_config" value="config($configure$);&#10;&#10;//---&#10;&#10;$configure$.$inject = [ $deps$ ];&#10;&#10;function $configure$( $params$ ) {&#10;&#10;  // TODO: define code&#10;  $END$&#10;&#10;}" description="angular.js config" toReformat="true" toShortenFQNames="true">
+    <variable name="configure" expression="" defaultValue="&quot;configure&quot;" alwaysStopAt="true" />
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_run" value="run($runner$);&#10;&#10;//---&#10;&#10;$runner$.$inject = [ $deps$ ];&#10;&#10;function $runner$( $params$ ) {&#10;&#10;  // TODO: define code&#10;  $END$&#10;&#10;}" description="angular.js run" toReformat="true" toShortenFQNames="true">
+    <variable name="runner" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

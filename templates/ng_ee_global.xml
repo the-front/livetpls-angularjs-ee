@@ -1,0 +1,35 @@
+<templateSet group="ng_ee_global">
+  <template name="ng_ee_bootstrap" value="define(function(require) {&#10;  'use strict';&#10;&#10;  var angular = require('angular');&#10;&#10;  angular.element(document).ready(startAngularApp);&#10;&#10;  //---&#10;&#10;  function startAngularApp() {&#10;&#10;    console.log('start angular application');&#10;&#10;    // define angular module to bootstrap application&#10;    var module = angular.module(&#10;      // module name&#10;      '$moduleName$',&#10;&#10;      // module dependencies&#10;      [&#10;        // enable mock and intercep requests&#10;        require('./require.mock.load').name,$END$&#10;&#10;        require('app/$mainPackage$/package').name&#10;      ]&#10;    );&#10;&#10;    // start angular app&#10;    angular.bootstrap(document, [module.name]);&#10;&#10;  }&#10;&#10;});" description="angular.js ee bootstrap app" toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="&quot;run&quot;" alwaysStopAt="true" />
+    <variable name="mainPackage" expression="" defaultValue="&quot;main&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_ee_package" value="define(function(require) {&#10;  'use strict';&#10;&#10;  var module = require('./module');&#10;  require('./resource');&#10;  require('./controller');&#10;  require('./$routesStates$');&#10;&#10;  return module;$END$&#10;&#10;});" description="angularjs ee package" toReformat="true" toShortenFQNames="true">
+    <variable name="routesStates" expression="" defaultValue="&quot;states&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_ee_module" value="define(function(require) {&#10;  'use strict';&#10;&#10;  var angular = require('angular');&#10;  // require('angularResource');&#10;&#10;  // require('uiRouter');&#10;  // require('uiBootstrap');&#10;&#10;  // angular module definition&#10;  return angular.module(&#10;    // module name&#10;    '$moduleName$',&#10;&#10;    // module dependencies&#10;    [&#10;      // 'ngResource',&#10;&#10;      // 'ui.router',&#10;      // 'ui.bootstrap',&#10;&#10;      $END$&#10;    ]&#10;  );&#10;&#10;});" description="angular.js ee define module" toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_ee_module_use" value="define(function(require) {&#10;  'use strict';&#10;&#10;  var module = require('$path$/module');&#10;&#10;  module.$SELECTION$$END$&#10;&#10;});" description="angular.js ee module use" toReformat="true" toShortenFQNames="true">
+    <variable name="path" expression="" defaultValue="&quot;.&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

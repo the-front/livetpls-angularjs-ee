@@ -1,0 +1,9 @@
+<templateSet group="ng_ee_javascript">
+  <template name="iife" value="(function() {&#10;  'use strict';&#10;&#10;  $SELECTION$$END$&#10;&#10;})();" description="JavaScript IIFE" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
