@@ -1,5 +1,5 @@
 <templateSet group="ng_ee_angularjs_resource">
-  <template name="ng_resource_id" value="factory('$name$Resource', $name$Resource);&#10;&#10;//--- $comment$&#10;&#10;$fnName$Resource.$inject = [ '$resource'$deps$ ];&#10;&#10;function $fnName$Resource( resource$params$ ) {&#10;&#10;  return resource(&#10;    '$url_rest$/$url_resource$/:id',&#10;    {&#10;      'id': ''&#10;    },&#10;    {&#10;      'update': { 'method': 'PUT' }&#10;    }&#10;  );$END$&#10;&#10;}" description="angular.js ngResource with id" toReformat="true" toShortenFQNames="true">
+  <template name="ng_resource_id" value="factory('$name$Resource', $name$Resource);&#10;&#10;//--- $comment$&#10;&#10;$fnName$Resource.$inject = [ '$resource'$deps$ ];&#10;&#10;function $fnName$Resource( $$resource$params$ ) {&#10;&#10;  return $$resource(&#10;    '$url_rest$/$url_resource$/:id',&#10;    {&#10;      'id': ''&#10;    },&#10;    {&#10;      'update': { 'method': 'PUT' }&#10;    }&#10;  );$END$&#10;&#10;}" description="angular.js ngResource with id" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="&quot;My&quot;" alwaysStopAt="true" />
     <variable name="comment" expression="" defaultValue="&quot;https://docs.angularjs.org/api/ngResource/service/$resource&quot;" alwaysStopAt="true" />
     <variable name="fnName" expression="capitalize( name )" defaultValue="" alwaysStopAt="true" />
@@ -13,7 +13,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="ng_resource" value="factory('$name$Resource', $name$Resource);&#10;&#10;//--- $comment$&#10;&#10;$fnName$Resource.$inject = [ '$resource'$deps$ ];&#10;&#10;function $fnName$Resource( resource$params$ ) {&#10;&#10;  return resource(&#10;    '$url_rest$/$url_resource$'&#10;  );$END$&#10;&#10;}" description="angular.js ngResource" toReformat="true" toShortenFQNames="true">
+  <template name="ng_resource" value="factory('$name$Resource', $name$Resource);&#10;&#10;//--- $comment$&#10;&#10;$fnName$Resource.$inject = [ '$resource'$deps$ ];&#10;&#10;function $fnName$Resource( $$resource$params$ ) {&#10;&#10;  return $$resource(&#10;    '$url_rest$/$url_resource$'&#10;  );$END$&#10;&#10;}" description="angular.js ngResource" toReformat="false" toShortenFQNames="true">
     <variable name="name" expression="" defaultValue="&quot;My&quot;" alwaysStopAt="true" />
     <variable name="fnName" expression="capitalize( name )" defaultValue="" alwaysStopAt="true" />
     <variable name="comment" expression="" defaultValue="&quot;https://docs.angularjs.org/api/ngResource/service/$resource&quot;" alwaysStopAt="true" />
