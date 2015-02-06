@@ -25,7 +25,7 @@ Live templates for:
 
 * [Installation](docs/installation.md)
 
-* [Available Live Templates](docs/live_templates.md)
+<!-- * [Available Live Templates](docs/live_templates.md) -->
 
 
 ## Contributing
