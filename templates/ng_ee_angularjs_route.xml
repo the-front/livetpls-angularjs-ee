@@ -1,0 +1,35 @@
+<templateSet group="ng_ee_angularjs_route">
+  <template name="ng_routeProvider_configure" value="config(configureRoutes);&#10;&#10;//--- $comment$&#10;&#10;configureRoutes.$inject = [ '$routeProvider'$deps$ ];&#10;&#10;function configureRoutes( routeProvider$params$ ) {&#10;&#10;  routeProvider&#10;    .when(&#10;      '/$route$',&#10;      {&#10;        templateUrl   : '$path$.html',&#10;        controller    : '$controllerName$Ctrl',&#10;        controllerAs  : '$controllerAs$'&#10;      }&#10;    )$END$;&#10;&#10;}" description="angular.js ngRoute configure $routeProvider" toReformat="false" toShortenFQNames="true">
+    <variable name="comment" expression="" defaultValue="&quot;https://docs.angularjs.org/api/ngRoute&quot;" alwaysStopAt="true" />
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="route" expression="" defaultValue="&quot;route&quot;" alwaysStopAt="true" />
+    <variable name="path" expression="" defaultValue="&quot;app/module/template&quot;" alwaysStopAt="true" />
+    <variable name="controllerName" expression="" defaultValue="&quot;ControllerName&quot;" alwaysStopAt="true" />
+    <variable name="controllerAs" expression="" defaultValue="&quot;vm&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_routeProvider_when" value="when(&#10;  '/$route$',&#10;  {&#10;    templateUrl   : '$path$.html',&#10;    controller    : '$controllerName$Ctrl',&#10;    controllerAs  : '$controllerAs$'&#10;  }&#10;)$END$" description="angular.js ngRoute when" toReformat="false" toShortenFQNames="true">
+    <variable name="route" expression="" defaultValue="&quot;route&quot;" alwaysStopAt="true" />
+    <variable name="path" expression="" defaultValue="&quot;app/module/template&quot;" alwaysStopAt="true" />
+    <variable name="controllerName" expression="" defaultValue="&quot;ControllerName&quot;" alwaysStopAt="true" />
+    <variable name="controllerAs" expression="" defaultValue="&quot;vm&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_routeProvider_otherwise" value="otherwise({ redirectTo: '/$route$' })$END$" description="angular.js ngRoute otherwise" toReformat="false" toShortenFQNames="true">
+    <variable name="route" expression="" defaultValue="&quot;404&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
