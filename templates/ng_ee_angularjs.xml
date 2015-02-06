@@ -129,4 +129,21 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="ng_module_set" value="angular.module('$moduleName$', [&#10;  $moduleDependencies$&#10;]);$END$" description="angular.js set module" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="moduleDependencies" expression="" defaultValue="&quot;// TODO: define module dependencies&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_module_get" value="angular.module('$moduleName$');$END$" description="angular.js get module" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
