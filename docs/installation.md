@@ -6,7 +6,7 @@
 
 ### WebStorm: Manual installation
 
-copy `*.xml` form `/templates` to:
+copy `*.xml` from `/templates` to:
 
 * Windows
 
@@ -31,7 +31,7 @@ copy `*.xml` form `/templates` to:
 
 > For IntelliJ IDEA Community edition the folder name is `.IdeaICXX`
 
-copy `*.xml` form `/templates` to:
+copy `*.xml` from `/templates` to:
 
 * Windows
 
