@@ -21,7 +21,11 @@ Live templates for:
     * [Jasmine: Behavior-Driven JavaScript](https://jasmine.github.io/)
 
 
-<!-- TODO: review -->
+## Docs
+
+* [Installation](docs/installation.md)
+
+* [Available Live Templates](docs/live_templates.md)
 
 
 ## Contributing
