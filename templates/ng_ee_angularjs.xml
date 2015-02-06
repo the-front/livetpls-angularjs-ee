@@ -34,9 +34,95 @@
     </context>
   </template>
   <template name="ng_run" value="run($runner$);&#10;&#10;//---&#10;&#10;$runner$.$inject = [ $deps$ ];&#10;&#10;function $runner$( $params$ ) {&#10;&#10;  // TODO: define code&#10;  $END$&#10;&#10;}" description="angular.js run" toReformat="true" toShortenFQNames="true">
-    <variable name="runner" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="runner" expression="" defaultValue="&quot;runner&quot;" alwaysStopAt="true" />
     <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_filter" value="filter('$filterName$', $filterName$);&#10;&#10;//--- $comment$&#10;&#10;function $filterName$() {&#10;&#10;  return function(input, $configValue$) {&#10;    input = input || '';&#10;    var out = '';&#10;&#10;    // TODO: define filter process code$END$&#10;&#10;    return out;&#10;  };&#10;&#10;}" description="angular.js filter" toReformat="true" toShortenFQNames="true">
+    <variable name="filterName" expression="" defaultValue="&quot;myFilter&quot;" alwaysStopAt="true" />
+    <variable name="comment" expression="" defaultValue="&quot;https://docs.angularjs.org/guide/filter&quot;" alwaysStopAt="true" />
+    <variable name="configValue" expression="" defaultValue="&quot;configValue&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_decorator" value="decorator('$toDecorate$', $toDecorate$Decorator);&#10;&#10;//--- $comment$&#10;&#10;$toDecorate$Decorator.$inject = ['$delegate'];&#10;&#10;function $toDecorate$Decorator($delegate) {&#10;  &#10;  // TODO: define decorator&#10;  $END$&#10;&#10;  return $delegate;&#10;}" description="angular.js $provide.decorator" toReformat="true" toShortenFQNames="true">
+    <variable name="toDecorate" expression="" defaultValue="&quot;ServiceName&quot;" alwaysStopAt="true" />
+    <variable name="comment" expression="" defaultValue="&quot;https://docs.angularjs.org/api/auto/service/$provide&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_provider" value="provider('$providerName$', $providerName$);&#10;&#10;//--- $comment$&#10;&#10;function $providerName$() {&#10;  &#10;  this.$get = $providerName$Get;&#10;&#10;  //---&#10;&#10;  $providerName$Get.$inject = [ $deps$ ];&#10;&#10;  function $providerName$Get( $params$ ) {&#10;    return {$END$};&#10;  }&#10;&#10;}" description="angular.js provider" toReformat="true" toShortenFQNames="true">
+    <variable name="providerName" expression="" defaultValue="&quot;MyProvider&quot;" alwaysStopAt="true" />
+    <variable name="comment" expression="" defaultValue="&quot;https://docs.angularjs.org/guide/providers&quot;" alwaysStopAt="true" />
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_service" value="service('$serviceName$', $serviceName$);&#10;&#10;//---&#10;&#10;$serviceName$.$inject = [ $deps$ ];&#10;&#10;function $serviceName$( $params$ ) {&#10;  var service = this;&#10;&#10;  // TODO: review&#10;  service.att = 'value';&#10;  service.privateFunc = privateFunc;&#10;&#10;  //TODO: define code&#10;  $END$&#10;&#10;  //---&#10;&#10;  function privateFunc() {&#10;    return 'hello external world';&#10;  }&#10;&#10;}" description="angular.js service" toReformat="true" toShortenFQNames="true">
+    <variable name="serviceName" expression="" defaultValue="&quot;MyService&quot;" alwaysStopAt="true" />
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_factory" value="factory('$factoryName$', $factoryName$);&#10;&#10;//---&#10;&#10;$factoryName$.$inject = [ $deps$ ];&#10;&#10;function $factoryName$( $params$ ) {&#10;&#10;  var service = {&#10;    attr: 'value',&#10;    func: hiddenFunction$END$&#10;  };&#10;&#10;  return service;&#10;&#10;  //---&#10;&#10;  function hiddenFunction() {&#10;    &#10;    // TODO: define&#10;&#10;  }&#10;&#10;}" description="angular.js factory" toReformat="true" toShortenFQNames="true">
+    <variable name="factoryName" expression="" defaultValue="&quot;MyService&quot;" alwaysStopAt="true" />
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_controller" value="controller('$controllerName$Ctrl', $controllerName$Ctrl);&#10;&#10;//---&#10;&#10;$controllerName$Ctrl.$inject = [ $deps$ ];&#10;&#10;function $controllerName$Ctrl( $params$ ) {&#10;  var vm = this;&#10;&#10;  // TODO: define vm (ViewModel) attribures&#10;  $END$&#10;&#10;  //---&#10;&#10;  // TODO: define internal processing code&#10;&#10;}" description="angular.js controller" toReformat="true" toShortenFQNames="true">
+    <variable name="controllerName" expression="" defaultValue="&quot;My&quot;" alwaysStopAt="true" />
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_directive" value="directive('$directiveName$', $directiveName$);&#10;&#10;//--- $comment$&#10;&#10;function $directiveName$() {&#10;&#10;  var directive = {&#10;    restrict: '$restrict$',&#10;    link: $linkingFn$&#10;  };&#10;&#10;  return directive;&#10;&#10;  //---&#10;&#10;  function $linkingFn$(scope, element, attrs) {&#10;&#10;    // TODO: define code&#10;    $END$&#10;&#10;  }&#10;&#10;}" description="angular.js directive short" toReformat="true" toShortenFQNames="true">
+    <variable name="directiveName" expression="" defaultValue="&quot;myDirective&quot;" alwaysStopAt="true" />
+    <variable name="comment" expression="" defaultValue="&quot;https://docs.angularjs.org/guide/directive&quot;" alwaysStopAt="true" />
+    <variable name="restrict" expression="" defaultValue="&quot;EA&quot;" alwaysStopAt="true" />
+    <variable name="linkingFn" expression="" defaultValue="&quot;linkingFn&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng_directive_long" value="directive('$directiveName$', $directiveName$);&#10;&#10;//---&#10;$comment$&#10;&#10;$directiveName$.$inject = [ $deps$ ];&#10;&#10;function $directiveName$( $params$ ) {&#10;&#10;  var scope = {&#10;    max: '='&#10;  };$END$&#10;&#10;  var directive = {&#10;    restrict: '$restrict$',&#10;    scope: scope,&#10;&#10;    controller: ControllerFn,&#10;    controllerAs: '$controllerAs$',&#10;    // So our isolated scope will be stored&#10;    // on the `this` context of our controller&#10;    // instead of &#10;    bindToController: true,&#10;&#10;    link: linkingFn,&#10;&#10;    template: templateFn,&#10;    templateUrl: templateUrlFn&#10;  };&#10;&#10;  return directive;&#10;&#10;  //---&#10;&#10;  ControllerFn.$inject = [ $ctrlDeps$ ];&#10;&#10;  function ControllerFn( $ctrlParams$ ) {&#10;    var vm = this;&#10;&#10;    vm.min = 3; &#10;    console.log('CTRL: vm.min = %i', vm.min);&#10;    console.log('CTRL: vm.max = %i', vm.max);&#10;  }&#10;&#10;  //---&#10;&#10;  function linkingFn(scope, el, attr, ctrl) {&#10;    console.log('LINK: scope.max = %i', scope.max);&#10;    console.log('LINK: scope.vm.min = %i', scope.vm.min);&#10;    console.log('LINK: scope.vm.max = %i', scope.vm.max);&#10;  }&#10;&#10;  //---&#10;&#10;  function templateFn(tElement, tAttrs) {&#10;    return [&#10;      '&lt;div&gt;min: {{vm.min}} :: max: {{vm.max}}&lt;/div&gt;'&#10;    ].join('');&#10;  }&#10;&#10;  //---&#10;&#10;  function templateUrlFn(tElement, tAttrs) {&#10;    return 'path/directive/template.html';&#10;  }&#10;&#10;}" description="angular.js directive long" toReformat="true" toShortenFQNames="true">
+    <variable name="directiveName" expression="" defaultValue="&quot;myDirective&quot;" alwaysStopAt="true" />
+    <variable name="comment" expression="" defaultValue="&quot;\/*\nhttps://docs.angularjs.org/guide/directive\nhttps://docs.angularjs.org/api/ng/service/$compile\n*/&quot;" alwaysStopAt="true" />
+    <variable name="deps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="params" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="restrict" expression="" defaultValue="&quot;EA&quot;" alwaysStopAt="true" />
+    <variable name="controllerAs" expression="" defaultValue="&quot;vm&quot;" alwaysStopAt="true" />
+    <variable name="ctrlDeps" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ctrlParams" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
