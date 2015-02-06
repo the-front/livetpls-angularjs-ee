@@ -1,8 +1,12 @@
 # livetpls-angularjs-ee
 
-* [JetBrains IDEs](https://www.jetbrains.com/webide/) - Live templates for:
+[JetBrains](https://www.jetbrains.com/):
 
-  * [WebStorm](https://www.jetbrains.com/webstorm/) - ( [Project and IDE Settings](https://www.jetbrains.com/webstorm/help/project-and-ide-settings.html) ) : ( [Live Templates](https://www.jetbrains.com/webstorm/help/live-templates-2.html) ) | [IntelliJ IDEA](https://www.jetbrains.com/idea/) - ( [Project and IDE Settings](https://www.jetbrains.com/idea/help/project-and-ide-settings.html) ) : ( [Live Templates](https://www.jetbrains.com/idea/help/live-templates.html) )
+  * [WebStorm](https://www.jetbrains.com/webstorm/) - [Project and IDE Settings](https://www.jetbrains.com/webstorm/help/project-and-ide-settings.html) : [Live Templates](https://www.jetbrains.com/webstorm/help/live-templates-2.html)
+
+  * [IntelliJ IDEA](https://www.jetbrains.com/idea/) - [Project and IDE Settings](https://www.jetbrains.com/idea/help/project-and-ide-settings.html) : [Live Templates](https://www.jetbrains.com/idea/help/live-templates.html)
+
+Live templates for:
 
   * [[GitHub] erkobridee / angularjs-ee-boilerplate](https://github.com/the-front/angularjs-ee-boilerplate) v[1.4.2](https://github.com/the-front/angularjs-ee-boilerplate/releases/tag/1.4.2)
 
