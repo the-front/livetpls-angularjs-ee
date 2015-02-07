@@ -44,3 +44,30 @@ copy `*.xml` from `/templates` to:
 * Mac
 
   * `~/Library/Preferences/IntelliJIdeaXX/templates`
+
+
+## Automated installation
+
+> Gulp tasks based on manual installation infos to copy live templates xmls to IDE templates directory resolving which OS (Windows, Linux and Mac) and IDE directory
+
+* clone or download project
+
+* install node dependencies
+
+`$ npm install`
+
+* run Gulp task
+
+  * templates dir options:
+
+    * **WebStorm :** `gulp --install`
+
+    * **IntelliJ IDEA :** `gulp --install --idea`
+
+    * **IntelliJ IDEA Community :** `gulp --install --idea --community`
+
+  * specify IDE version family:
+
+    * `--ideVersion={number}`
+
+
