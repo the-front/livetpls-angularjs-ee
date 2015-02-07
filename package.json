@@ -1,0 +1,50 @@
+{
+  "name": "livetpls-angularjs-ee",
+  "version": "0.1.0",
+  "description": "live templates for JetBrains WebStorm and IntelliJ IDEA/Community",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "outdated": "npm outdated --depth=0",
+    "testos": "node tools/scripts/testos",
+    "setup": "node tools/scripts/setup",
+    "preinstall": "node tools/scripts/preinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-front/livetpls-angularjs-ee.git"
+  },
+  "keywords": [
+    "javascript",
+    "angularjs",
+    "live",
+    "templates",
+    "jetbrains",
+    "webstorm",
+    "intellij",
+    "requirejs",
+    "jasmine"
+  ],
+  "author": "Erko Bridee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-front/livetpls-angularjs-ee/issues"
+  },
+  "homepage": "https://github.com/the-front/livetpls-angularjs-ee",
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-bump": "^0.1.13",
+    "gulp-debug": "^2.0.0",
+    "gulp-if": "^1.2.5",
+    "gulp-jshint": "^1.9.2",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-print": "^1.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-task-listing": "^1.0.0",
+    "gulp-util": "^3.0.3",
+    "jshint-summary": "^0.4.0",
+    "lazypipe": "^0.2.2",
+    "run-sequence": "^1.0.2",
+    "yargs": "^2.1.1"
+  }
+}
