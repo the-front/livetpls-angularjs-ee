@@ -1,10 +1,10 @@
 # livetpls-angularjs-ee : Installation
 
-## WebStorm
+## Manual installation
+
+### WebStorm
 
 * [WebStorm](https://www.jetbrains.com/webstorm/) - [Project and IDE Settings](https://www.jetbrains.com/webstorm/help/project-and-ide-settings.html)
-
-### WebStorm: Manual installation
 
 copy `*.xml` from `/templates` to:
 
@@ -23,11 +23,9 @@ copy `*.xml` from `/templates` to:
   * `~/Library/Preferences/WebStormX/templates`
 
 
-## IntelliJ IDEA
+### IntelliJ IDEA
 
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/) - [Project and IDE Settings](https://www.jetbrains.com/idea/help/project-and-ide-settings.html)
-
-### IntelliJ IDEA: Manual installation
 
 > For IntelliJ IDEA Community edition the folder name is `.IdeaICXX`
 
