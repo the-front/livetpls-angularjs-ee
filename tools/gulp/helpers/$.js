@@ -33,20 +33,22 @@ $.oscheck = require('../../lib/oscheck');
 $.config = require('../../config');
 
 //---
+
+var ideVersion = (
+  $.args.ideVersion || (
+    ( $.is.idea || $.is.community ) ?
+      $.config.version.idea :
+      $.config.version.webstorm
+  )
+);
+
+// console.log( 'ideVersion: ' + ideVersion );
+
+//---
 // @begin: define output dir
 
 (function() {
   var util = require('util');
-
-  var ideVersion = (
-    $.args.ideVersion || (
-      ( $.is.idea || $.is.community ) ?
-        $.config.version.idea :
-        $.config.version.webstorm
-    )
-  );
-
-  // console.log( 'ideVersion: ' + ideVersion );
 
   var ideDirName = $.config.dirname.webstorm;
   if( $.is.idea && !$.is.community ) {
@@ -125,6 +127,25 @@ $.projectInfoMsg = function() {
   $.log('project: ' + $.pkg.name + ' v' + $.pkg.version);
   $.log('description: ' + $.pkg.description);
   $.log('');
+};
+
+$.helpMsg = function() {
+
+  $.log([
+    '',
+    'templates dir options:',
+    '',
+    'WebStorm : gulp --install',
+    'IntelliJ IDEA : gulp --install --idea',
+    'IntelliJ IDEA Community : gulp --install --idea --community',
+    '',
+    'specify IDE version family:',
+    '',
+    '--ideVersion=' + ideVersion,
+    ''
+
+  ]);
+
 };
 
 //---

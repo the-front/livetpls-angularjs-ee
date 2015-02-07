@@ -10,6 +10,8 @@ module.exports = function(gulp, $) {
         runTasks = runTasks.concat([ 'copy:from:ide' ]);
       } else if( $.is.install ) {
         runTasks = runTasks.concat([ 'copy:to:ide' ]);
+      } else {
+        $.helpMsg();
       }
 
       runTasks = runTasks.concat([ done ]);
