@@ -10,7 +10,7 @@ module.exports = function(gulp, $) {
       .src(
         $.path.join(
           $.config.paths.outputDir,
-          $.config.templatesNamePattern
+          $.config.templatesNamePatternFiles
         )
       )
       .pipe( $.if( $.is.debug, $.debug() ) )
@@ -28,7 +28,7 @@ module.exports = function(gulp, $) {
       .src(
         $.path.join(
           $.config.paths.src,
-          $.config.templatesNamePattern
+          $.config.templatesNamePatternFiles
         )
       )
       .pipe( $.if( $.is.debug, $.debug() ) )
