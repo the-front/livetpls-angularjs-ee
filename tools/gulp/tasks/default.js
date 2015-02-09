@@ -7,7 +7,7 @@ module.exports = function(gulp, $) {
       var runTasks = ['jshint'];
 
       if( $.is.get ) {
-        runTasks = runTasks.concat([ 'copy:from:ide' ]);
+        runTasks = runTasks.concat([ 'copy:from:ide', 'livetpls2md' ]);
       } else if( $.is.install ) {
         runTasks = runTasks.concat([ 'copy:to:ide' ]);
       } else {
