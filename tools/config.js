@@ -41,7 +41,7 @@ module.exports = (function() {
   //---
 
   config.version = {
-    webstorm: 9,
+    webstorm: 10,
     idea: 14
   };
 
