@@ -234,8 +234,6 @@ function $directiveName$( $params$ ) {
     templateUrl: templateUrlFn
   };
 
-  return directive;
-
   //---
 
   ControllerFn.$inject = [ $ctrlDeps$ ];
@@ -270,6 +268,10 @@ function $directiveName$( $params$ ) {
     return 'path/directive/template.html';
   }
 
+  //---
+
+  return directive;
+
 }
 ```
 
@@ -287,8 +289,6 @@ function $directiveName$() {
     link: $linkingFn$
   };
 
-  return directive;
-
   //---
 
   function $linkingFn$(scope, element, attrs) {
@@ -297,6 +297,10 @@ function $directiveName$() {
     $END$
 
   }
+
+  //---
+
+  return directive;
 
 }
 ```
@@ -339,15 +343,17 @@ function $factoryName$( $params$ ) {
     func: hiddenFunction$END$
   };
 
-  return service;
-
   //---
 
   function hiddenFunction() {
-    
+
     // TODO: define
 
   }
+
+  //---
+
+  return service;
 
 }
 ```
